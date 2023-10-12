@@ -2,6 +2,7 @@
 /*  */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Signika+Negative&display=swap");
 
 * {
   margin: 0;
@@ -241,14 +242,24 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover {
+  background: #d9bd9c;
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
+}
+
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: #d9bd9c;
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
 }
 
 .btn-color-1:hover {
-  background: rgb(2, 2, 2);
+  border: #d9bd9c 0.1rem solid; /*#d9bd9c*/
+}
+
+.btn-color-1 {
+  background: none;
 }
 
 .btn-color-2 {
@@ -256,7 +267,7 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: #d9bd9c 0.1rem solid;
 }
 
 .btn-container {
@@ -377,11 +388,6 @@ article .icon {
   color: black;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-
 /* Contact Section */
 
 #contact {
@@ -420,6 +426,48 @@ article .icon {
 
 .email-icon {
   cursor: default;
+}
+
+.contact__mail {
+  border-radius: 2rem;
+  position: relative;
+  background-color: #e8d5bd;
+  padding: 3rem 1.5rem 2rem;
+  margin-top: -1rem;
+  transition: background-color 0.4s;
+}
+
+.contact__title {
+  color: #524a2a;
+  font-size: larger;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact__button {
+  background-color: #b69e82;
+  cursor: pointer;
+}
+
+.contact__form,
+.contact__group {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact__input:focus + .contact__label,
+.contact__input:not(:placeholder-shown).contact__input:not(:focus)
+  + .contact__label {
+  opacity: 1;
+  top: -16px;
+}
+
+.contact__message {
+  color: #000000;
+  font-size: small;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
 }
 
 /* Footer Section */

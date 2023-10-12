@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> <!--emailjs form for send me a message-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Web Site</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -13,7 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#undergraduate">Undergraduate</a></li>
+          <li><a href="#undergraduate">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -30,7 +31,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li>
-            <a href="#undergraduate" onclick="toggleMenu()">Undergraduate</a>
+            <a href="#undergraduate" onclick="toggleMenu()">Skills</a>
           </li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -43,13 +44,12 @@
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi, I am</p>
-        <h1 class="title">Christine Joy Galicia</h1>
+        <h1 class="title">Christine</h1>
         <p class="section__text__p2">TUP IT Student</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./ProjectAssets/Galicia_CV.pdf')"
-          >
+            onclick="window.open('./ProjectAssets/Galicia_CV.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -64,11 +64,23 @@
             onclick="location.href='https://www.linkedin.com/in/christine-joy-galicia-8a9713285/'"
           />
           <img
+            src="./ProjectAssets/fblogo.png"
+            alt="My Facebook Profile"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/ChristineGLC/'"
+          />
+          <img
             src="./ProjectAssets/github.png"
             alt="My Github Profile"
             class="icon"
             onclick="location.href='https://github.com/tinnamaan02'"
           />
+          <img
+          src="./ProjectAssets/iglogo.png"
+          alt="My Instagram Profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/tinnamaan/'"
+        />
         </div>
       </div>
     </section>
@@ -91,8 +103,8 @@
                 alt="undergraduate icon"
                 class="icon"
               />
-              <h3>undergraduate</h3>
-              <p>3 Year College <br />IT Student</p>
+              <h3>Undergraduate</h3>
+              <p>3rd Year College <br />IT Student</p>
             </div>
             <div class="details-container">
               <img
@@ -106,16 +118,11 @@
           </div>
           <div class="text-container">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              I am a third-year college student at Technological University of the Philippines (TUP)
+              pursuing a Bachelor of Science in Information Technology. I am an organized, motivated 
+              and creative person that breaks through with every projects that I am going to make. For
+              more information about my skills and projects, it is included below. I know that I am
+              prepared to effectively contribute to any project or group because of my skills. 
             </p>
           </div>
         </div>
@@ -234,9 +241,9 @@
         <div class="about-container">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./ProjectAssets/1.png" alt="Poject 1" class="project-img" />
+              <img src="./ProjectAssets/prj1.jpg" alt="Poject 1" class="project-img" />
             </div>
-            <h2 class="undergraduate-sub-title project-title">Project One</h2>
+            <h2 class="undergraduate-sub-title project-title">Figma Interface Design Tool</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -246,17 +253,17 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='http://www.tup.edu.ph'"
+                onclick="location.href='https://drive.google.com/drive/folders/1cSJ0onoS-OjtnUHXAxvWyfyiq6qg03Kd?usp=drive_link'"
               >
-                Live Demo
+                Drive File
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./ProjectAssets/2.png" alt="Poject 2" class="project-img" />
+              <img src="./ProjectAssets/prj2.jpg" alt="Poject 2" class="project-img" />
             </div>
-            <h2 class="undergraduate-sub-title project-title">Project Two</h2>
+            <h2 class="undergraduate-sub-title project-title">Adobe Projects</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -266,17 +273,17 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='http://www.tup.edu.ph'"
+                onclick="location.href='https://drive.google.com/drive/folders/15pojX59kGH5ERRHwAEvt1JHYQ8lbPmOf?usp=drive_link'"
               >
-                Live Demo
+                Drive File
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./ProjectAssets/3.png" alt="Poject 1" class="project-img" />
+              <img src="./ProjectAssets/prj3.jpg" alt="Poject 1" class="project-img" />
             </div>
-            <h2 class="undergraduate-sub-title project-title">Project Three</h2>
+            <h2 class="undergraduate-sub-title project-title">Programming Projects</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -286,9 +293,9 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='http://www.tup.edu.ph'"
+                onclick="location.href='https://drive.google.com/drive/folders/1tRTvzlaPH37oYEsrXzPEBrtuCs-romCU?usp=drive_link'"
               >
-                Live Demo
+                Drive File
               </button>
             </div>
           </div>
@@ -319,12 +326,51 @@
         </div>
         <div class="contact-info-container">
           <img
+            src="./ProjectAssets/fblogo.png"
+            alt="Facebook icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.facebook.com/ChristineGLC/">Facebook</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
             src="./ProjectAssets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/christine-joy-galicia-8a9713285/">LinkedIn</a></p>
         </div>
+      </div>
+
+      <div class="contact__mail">
+      <h2 class="contact__title">Want to message me?</h2>
+
+      <form actions="" class="contact__form" id="contact-form">
+        <div class="contact__group">
+          <div class="contact__box">
+            <input type="text" name="user_name" class="contact__input" id="name" required placeholder="First Name">
+            <label for="name" class="contact__label"></label>
+          </div>
+
+          <div class="contact__box">
+            <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+            <label for="email" class="contact__label"></label>
+          </div>
+
+          <div class="contact__box">
+            <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+            <label for="subject" class="contact__label"></label>
+          </div>
+
+          <div class="contact__box contact__area">
+            <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+            <label for="message" class="contact__label"></label>
+          </div>
+        </div>
+
+        <p class="contact__message" id="contact-message">Sent!</p>
+        <button type="submit" class="btn contact__button">Send Message</button>
+      </form>
       </div>
     </section>
     <footer>
@@ -332,7 +378,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#undergraduate">undergraduate</a></li>
+            <li><a href="#undergraduate">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
