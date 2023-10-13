@@ -5,6 +5,7 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+/* Emailjs form https://www.emailjs.com/ */
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message");
 
@@ -29,7 +30,7 @@ const sendEmail = (e) => {
         contactForm.reset();
       },
       () => {
-        contactMessage.textContent = "Not Sent, Try Again."; //lalabas if may mali sa code on line 16-19
+        contactMessage.textContent = "Not Sent, Try Again."; //if there is wrong with the codes on line 16-19
       }
     );
 };
